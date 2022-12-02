@@ -1,0 +1,242 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/*-------header------*/
+#header {
+    background-image: url(/Logos-Backgrounds/background.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+#header img {
+    height: 5rem;
+    margin-left: 5rem;
+}
+
+#header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header li {
+    display: inline-block;
+    list-style: none;
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+#header li a {
+    color: white;
+    text-decoration: none; 
+    transition: transform 0.5s;
+}
+#header li a:hover {
+    color: #e71989;
+    transform: translateY(6rem);
+}
+
+#header .section {
+    margin-top: 15rem;
+}
+#header h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    margin-left: 5.5rem;
+}
+#header .section p {
+margin-left: 5.5rem ;
+font-size: 1.5rem;
+}
+
+#header h1 span {
+    color: #e71989;
+}
+
+/*--------------about----------*/
+#about {
+    display: flex;
+      margin-top: 5rem;
+      padding: 0;
+      height: 100vh;
+      justify-content: space-between;
+}
+#about img {
+    height: 25rem;
+    width: 20rem;
+    border-radius: .5rem;
+    margin-left: 10rem ;
+    margin-top: 5rem;
+}
+
+#about .container {
+    display: flex;
+    flex-direction: column;
+}
+
+#about h2 {
+    font-size: 3rem;
+    margin-top: 6rem;
+    margin-left: 3rem;
+}
+
+#about p {
+    margin: 2rem 3rem 5rem 3rem;
+    font-size: 1.5rem
+}
+
+#about a {
+    text-decoration: none;
+    color: #e71989;
+}
+
+/*---------certificate--------*/
+
+#certificate {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    height: 100vh;
+    
+}
+#certificate h3 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+#certificate img {
+    height: 25rem;
+    width: 30rem;
+    transition: transform 0.5s;
+    border-radius: 2rem;
+}
+
+#certificate img:hover {
+    transform: translateY(-1.5rem);
+}
+
+#certificate div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 8rem;
+}
+
+
+#certificate .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*-----Contact me -------*/
+#contacts {
+    display: flex;
+    height: 70vh;
+    margin-left: 10rem;
+    justify-content: space-between;
+}
+
+#contacts #section-1 h4 {
+    font-size: 2rem;
+    margin-left: 6rem;
+    margin-bottom: 3rem;
+}
+
+#contacts #section-1 p {
+    margin: 1rem 6rem;
+    
+}
+
+#contacts #socials ul {
+    display: flex;
+}
+#contacts #socials li {
+    width: 1.5rem;
+    height: 1.5rem;
+    list-style: none;
+    margin-left: 0.5rem;
+}
+#contacts #socials li img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    margin-left: 6rem;
+
+}
+#contacts #btn {
+    background-color: #e71989;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-left: 6rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+#contacts #btn a {
+    text-decoration: none;
+    color: white;
+}
+
+#contacts #section-2 {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    margin-right: 10rem;
+}
+
+#contacts input, #contacts textarea{
+    height: 3rem;
+    width: 25rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    background-color: rgb(218, 211, 211);
+}
+
+#contacts textarea {
+    resize: none;
+    height: 10rem;
+}
+
+#contacts #section-2 #btn {
+    width: 15rem;
+    margin-left: 0;
+    cursor: pointer;
+    color: white;
+    margin-top: -1rem;
+}
+
+#msg {
+    color: green;
+    margin-top: 1rem;
+    display: block;
+}
+
+/*----------footer----------*/
+    #footer {
+        background-color: gray;
+        height: 3rem;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #footer p {
+        font-size: 1.5rem;
+        text-align: center;
+        color: #e71989;
+    }
+

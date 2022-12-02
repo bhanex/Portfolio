@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brent Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+</head>
+<body>
+    <!-------header------>
+    <div id="header">
+        <div class="container">
+            <img src="/Logos-Backgrounds/Logo.png" alt="logo">
+            <div>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#certificate">Certificates</a></li>
+                    <li><a href="#contacts">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <p>Web Designer</p>
+            <h1>Hi, I'm <span>Brent</span><br>from the Philippines.</h1>
+        </div>
+    </div>
+    <!------------ About ------------------>
+    <div id="about">
+        <img src="/Logos-Backgrounds/about-profile.jpg" alt="about-profile">
+        <div class="container">
+            <h2>About me</h2>
+            <p>
+            I Graduated at <span><a href="https://www.facebook.com/UCLMCollegeofEngineering/" target="_blank">The University of Cebu-LM - College of Engineering</a></span> with the Bachelor's degree of Mechanical Engineering. I started studying web development in High School but unfortunately I stopped when I am in college because my course in college is not related about I.T. Courses. But I realized that programming is my passion and now I recall it through online courses like Udemy, Simplilearn and any sources on Youtube.
+            </p>
+        </div>
+    </div>
+    <!------Certificates------>
+    <div id="certificate">
+        <h3>Certificates</h3>
+        <div class="container">
+            <img src="/certificate/certificate-1.jpg" alt="certificate">
+            <img src="/certificate/certificate-2.jpg" alt="certificate"> 
+        </div>
+    </div>
+
+    <!-----Contacts------->
+    <div id="contacts">
+        <div id="section-1">
+            <h4>Contact me</h4>
+            <p>brentmcarniegrate@gmail.com</p>
+            <p>+639317153063</p>
+            <div id="socials">
+                <ul>
+                    <li><a href="https://www.facebook.com/Quickchow2021" target="_blank"><img src="/icons/Facebook.png" alt="icons"></a></li>
+                    <li><a href="#"><img src="/icons/Linkedin.png" alt="icons"></a></li>
+                    <li><a href="https://t.me/Astroquickchow" target="_blank"><img src="/icons/Telegram.png" alt="icons"></a></li>
+                </ul>
+            </div>
+            <button id="btn"><a href="/CV.pdf" download="">Download CV</a></button>
+        </div>
+        <div id="section-2">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" id="Message" cols="6" placeholder="Your Message" ></textarea>
+                <button type="submit" id="btn">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    <!-------Footer-------->
+    <div id="footer">
+        <p>Copyright © Bhanex Grate ❤ Personal Portfolio</p>
+    </div>
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwUMuyDs1OjmF3SZyd5ESANue4yPni0jjcmOP7ktnOcDojLGf5q5DOu_tnRvH4UTIM/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById('msg');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML ='Message sent successfully!'})
+        setTimeout(function(){
+            msg.innerHTML = ''
+        },5000)
+        form.reset()
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
